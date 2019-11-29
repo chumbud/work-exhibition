@@ -1,0 +1,244 @@
+::root {
+  font-size: 10px;
+}
+::selection {
+  background-color: black;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+h1 {
+  font-size: 6vmin;
+  max-width: 40rem;
+  font-weight: 300;
+  margin: 0;
+}
+h1 + .arrow {
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+}
+h2 {
+  font-size: 5vh;
+  font-weight: 300;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 160%;
+  max-width: 50vw;
+  margin-top: 0.8rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 3rem;
+  z-index: 10;
+  pointer-events: none;
+}
+nav {
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li button {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 0;
+  background: 0;
+  text-decoration: underline 2px;
+}
+nav ul li button:hover {
+  cursor: pointer;
+  text-decoration-style: wavy;
+}
+#logo {
+  font-family: InterUI-Black, Inter UI;
+  font-weight: 800;
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17vh;
+  width: 17vh;
+}
+
+#logo:after {
+  content: "";
+  background-image: url("./assets/general/circle.svg");
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  animation: rotation 10s linear forwards;
+  animation-iteration-count: infinite;
+}
+#logo:before {
+  content: "work";
+  font-size: 3.5vh;
+  transform: rotate(-10deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#horizontal-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position: absolute;
+  width: 100vh;
+  height: 100vw;
+}
+#horizontal-inner-container {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space: nowrap;
+  font-size: 0;
+  display: flex;
+}
+#horizontal-inner-container > section {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+#about {
+  font-size: 1.6rem;
+  white-space: normal;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 0 10rem !important;
+  margin-top: 25vh;
+}
+#about > p {
+  max-width: 50rem;
+}
+.workspace {
+  white-space: normal;
+}
+.workspace-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workspace-grid {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+}
+.workspace-frame {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-self: center;
+}
+.workspace-frame img {
+  width: 50vmin;
+  /*
+  max-width: 50vh;
+  max-height: 75vh;*/
+  padding: 0.8rem;
+  border: 1px solid black;
+}
+.workspace-sidebar {
+  justify-self: left;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  align-self: center;
+  margin-bottom: calc(5vh + 0.5rem);
+}
+.workspace-sidebar p {
+  max-width: 20vw;
+  margin-bottom: 1.6rem;
+  margin-top: 0;
+}
+.workspace-sidebar a {
+  font-size: 1rem;
+  color: black;
+  display: inline-block;
+  text-decoration: underline;
+  margin-right: 0.8rem;
+  margin-top: 0.8rem;
+}
+.workspace-sidebar a:hover {
+  text-decoration-style: wavy;
+}
+#timeline {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#timeline .line {
+  width: 1px;
+  height: 1rem;
+  background-color: black;
+  transition: all 0.2s ease-in-out;
+  margin: 0 1rem;
+  position: relative;
+}
+#timeline .line p {
+  text-align: center;
+  width: 3rem;
+  left: -1.5rem;
+  top: -2.5rem;
+  position: absolute;
+  font-size: 0.8rem;
+  color: black;
+}
+#timeline .line:after {
+  content: "";
+  width: 3rem;
+  height: 4rem;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: -1.5rem;
+  top: -1rem;
+}
+#timeline .line:hover {
+  height: 2em;
+  width: 1px;
+}
+#timeline .line.current {
+  width: 3px;
+  height: 3.5rem;
+}
+#timeline .line.current p {
+}
+#tracker {
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 5px;
+  background-color: black;
+}
