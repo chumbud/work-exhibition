@@ -80,7 +80,6 @@ nav ul li button:hover {
   align-items: center;
   height: 17vh;
   width: 17vh;
-  transition: .2s all ease-in-out;
 }
 
 #logo:after {
@@ -97,7 +96,6 @@ nav ul li button:hover {
   content: "work";
   font-size: 3.5vh;
   transform: rotate(-10deg);
-  transition: .2s all ease-in-out;
 }
 
 @keyframes rotation {
@@ -129,7 +127,7 @@ nav ul li button:hover {
   min-width: 100vw;
   min-height: 100vh;
 }
-#about {
+#about, #end {
   font-size: 1.6rem;
   white-space: normal;
   min-width: 100vw;
@@ -149,12 +147,11 @@ nav ul li button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2.4rem;
 }
 .workspace-grid {
   display: grid;
   grid-gap: 3rem;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
   align-items: start;
 }
 .workspace-frame {
@@ -179,7 +176,6 @@ nav ul li button:hover {
 }
 .workspace-sidebar p {
   max-width: 20vw;
-  min-width: 10vw;
   margin-bottom: 1.6rem;
   margin-top: 0;
 }
@@ -229,6 +225,22 @@ nav ul li button:hover {
   left: -1.5rem;
   top: -1rem;
 }
+#timeline .line img {
+  width: 4rem;
+  bottom: 3.5rem;
+  left: -2rem;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  padding: .5rem;
+  border: 1px solid black;
+  pointer-events: none;
+}
+#timeline .line:hover img {
+  opacity: 1;
+  bottom: 3rem;
+}
 #timeline .line:hover {
   height: 2em;
   width: 1px;
@@ -244,6 +256,7 @@ nav ul li button:hover {
   display: block;
   width: 0%;
   height: 5px;
+  margin-left: 1rem;
   background-color: black;
 }
 @media only screen and (max-width: 1200px) {
@@ -284,7 +297,7 @@ nav ul li button:hover {
   }
   .workspace-sidebar p {
     max-width: 60vmin;
-    font-size: 2vw;
+    font-size: 2.6vw;
   }
   .workspace-frame img {
     width: 60vmin
