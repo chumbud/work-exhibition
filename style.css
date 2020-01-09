@@ -98,12 +98,35 @@ nav ul li button:hover {
   transform: rotate(-10deg);
 }
 
-
-
 #wrk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vh;
+  position: relative;
+}
+
+#wrk:before {
+  content: "";
+  background-image: url("./assets/general/o.svg");
+  background-size: cover;
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  margin-left: -3.5rem;
   animation: rotation 10s linear forwards;
   animation-iteration-count: infinite;
 }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #horizontal-container {
   overflow-y: scroll;
   overflow-x: hidden;
