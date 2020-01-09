@@ -3,25 +3,15 @@ var innerContainer = document.querySelector("#horizontal-inner-container");
 var about = document.querySelector("a[href^='#about'");
 const end = document.querySelector("a[href^='#end'");
 
-console.log(innerContainer.scrollWidth)
-console.log(document.documentElement.clientWidth)
-console.log(container.scrollTop)
-
 function scrollProgress() {
   var pageWidth =
     innerContainer.scrollWidth - document.documentElement.clientWidth;
   
   var scrollStatePercentage = (container.scrollTop / pageWidth) * 100;
-  document.querySelector("#tracker").style.width = "calc(" + scrollStatePercentage + "% - 2rem)";
+  document.querySelector("#tracker").style.width = scrollStatePercentage + "%";
   
-  var per = (document.querySelector("#timeline").offsetWidth - 32) / 10;
+  var per = (document.querySelector("#timeline").offsetWidth ) / (count+1);
   var number = Math.floor((document.querySelector("#tracker").offsetWidth) / per);
-  
-  console.log("---")
-  console.log((document.querySelector("#timeline").offsetWidth - 32) + "/" + count + "=" + (((document.querySelector("#timeline").offsetWidth)-32) / count))
-  
-  console.log(number)
-  console.log((document.querySelector("#tracker").offsetWidth) + "/" + per + " = " + ((document.querySelector("#tracker").offsetWidth) / per))
   
   document.querySelectorAll(".line").forEach(line => {
     line.classList.remove("current");
@@ -31,7 +21,7 @@ function scrollProgress() {
       .querySelector("a[href^='#" + number + "'")
       .classList.add("current");
   else if(number == 0) about.classList.add("current");
-  else if(number == count) end.classList.add("current");
+  else if(number >= count) end.classList.add("current");
 }
 
 container.addEventListener("scroll", function() {
