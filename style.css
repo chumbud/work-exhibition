@@ -1,4 +1,4 @@
-::root {
+:root {
   font-size: 10px;
 }
 ::selection {
@@ -17,27 +17,27 @@ body {
 }
 h1 {
   font-size: 6vmin;
-  max-width: 40rem;
+  max-width: 56rem;
   font-weight: 300;
   margin: 0;
 }
 h1 + .arrow {
-  margin-top: 1.6rem;
-  margin-bottom: 4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 h2 {
   font-size: 5vh;
   font-weight: 300;
-  margin-top: 0.8rem;
+  margin-top: 2.4rem;
   text-align: center;
 }
 h3 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 300;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 160%;
   max-width: 50vw;
   margin-top: 0.8rem;
@@ -47,7 +47,7 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding: 3rem;
+  padding: 6rem;
   z-index: 10;
   pointer-events: none;
 }
@@ -61,7 +61,7 @@ nav ul li {
 }
 nav ul li button {
   font-size: 1.6rem;
-  padding: 0.8rem;
+  padding: 1.6rem;
   border: 0;
   background: 0;
   text-decoration: underline 2px;
@@ -98,15 +98,12 @@ nav ul li button:hover {
   transform: rotate(-10deg);
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
+
+#wrk {
+  animation: rotation 10s linear forwards;
+  animation-iteration-count: infinite;
+}
 #horizontal-container {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -127,16 +124,16 @@ nav ul li button:hover {
   min-width: 100vw;
   min-height: 100vh;
 }
-#about {
-  font-size: 1.6rem;
+#about, #end {
+  font-size: 2.4rem;
   white-space: normal;
   min-width: 100vw;
   min-height: 100vh;
-  padding: 0 10rem !important;
-  margin-top: 25vh;
+  padding: 0 15rem !important;
+  margin-top: 30vh;
 }
 #about > p {
-  max-width: 50rem;
+  max-width: 56rem;
 }
 .workspace {
   white-space: normal;
@@ -150,9 +147,10 @@ nav ul li button:hover {
 }
 .workspace-grid {
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 4rem;
   grid-template-columns: 1fr auto 1fr;
   align-items: start;
+  padding: 2.4rem;
 }
 .workspace-frame {
   grid-column-start: 2;
@@ -164,7 +162,7 @@ nav ul li button:hover {
   /*
   max-width: 50vh;
   max-height: 75vh;*/
-  padding: 0.8rem;
+  padding: 1.2rem;
   border: 1px solid black;
 }
 .workspace-sidebar {
@@ -176,11 +174,11 @@ nav ul li button:hover {
 }
 .workspace-sidebar p {
   max-width: 20vw;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
   margin-top: 0;
 }
 .workspace-sidebar a {
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: black;
   display: inline-block;
   text-decoration: underline;
@@ -200,38 +198,54 @@ nav ul li button:hover {
 }
 #timeline .line {
   width: 1px;
-  height: 1rem;
+  height: 2rem;
   background-color: black;
   transition: all 0.2s ease-in-out;
-  margin: 0 1rem;
+  margin: 0 2rem;
   position: relative;
 }
 #timeline .line p {
   text-align: center;
   width: 3rem;
   left: -1.5rem;
-  top: -2.5rem;
+  top: -4rem;
   position: absolute;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
   color: black;
 }
 #timeline .line:after {
   content: "";
-  width: 3rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   display: block;
   position: absolute;
   z-index: -1;
-  left: -1.5rem;
+  left: -2.5rem;
   top: -1rem;
 }
+#timeline .line img {
+  width: 6rem;
+  bottom: 3.5rem;
+  left: -3rem;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  padding: .5rem;
+  border: 1px solid black;
+  pointer-events: none;
+}
+#timeline .line:hover img, #timeline .line.current img {
+  opacity: 1;
+  bottom: 5rem;
+}
 #timeline .line:hover {
-  height: 2em;
+  height: 4em;
   width: 1px;
 }
 #timeline .line.current {
   width: 3px;
-  height: 3.5rem;
+  height: 4rem;
 }
 #timeline .line.current p {
 }
@@ -240,5 +254,57 @@ nav ul li button:hover {
   display: block;
   width: 0%;
   height: 5px;
+  margin-left: 2rem;
   background-color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .workspace-sidebar p {
+    font-size: 1.5vw;
+  }
+  .workspace-frame h2 {
+    font-size: 5.5vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  :root {
+    font-size: 8px;
+  }
+  #logo {
+    width: 15vw;
+    height: 15vw;
+  }
+  #logo::before {
+    font-size: 3vw;
+  }
+  #about > *, #about >  #end > * {
+    max-width: 100%;
+  }
+  .workspace-container {
+    align-items: center;
+  }
+  .workspace-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1.6rem;
+  }
+  .workspace-sidebar {
+    justify-self: initial;
+    grid-column-start: initial;
+    grid-column-end: initial;
+    align-self: initial;
+    margin-bottom: initial;
+  }
+  .workspace-frame {
+    grid-column-start: initial;
+    grid-column-end: initial;
+    justify-self: initial;
+  }
+  .workspace-sidebar p {
+    max-width: 60vmin;
+    font-size: 2.6vw;
+  }
+  .workspace-frame img {
+    width: 60vmin
+  }
 }
