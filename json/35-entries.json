@@ -1,11 +1,10 @@
-
 [
   {
-    "img": "1.jpg",
-    "time" : "4:44",
-    "day" : "12",
-    "month" : "1",
-    "year" : "1955",
+    "img": "27.jpg",
+    "time": "4:44",
+    "day": "12",
+    "month": "1",
+    "year": "1955",
     "author": "Ian Reucroft",
     "links": [
       { "vendor": "yelp", "url": "#" },
@@ -16,10 +15,11 @@
   },
   {
     "video": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/o4mIWoLg69Y?start=80' frameborder='0' allowfullscreen></iframe></div>",
-    "time" : "3:33AM",
-    "day" : "5",
-    "month" : "3",
-    "year" : "1960",
+    "video_thumb": "video-thumb-1.jpg",
+    "time": "3:33AM",
+    "day": "5",
+    "month": "3",
+    "year": "1960",
     "author": "Jeff Tao",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -29,11 +29,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "2.jpg",
-    "time" : "3:33AM",
-    "day" : "2",
-    "month" : "3",
-    "year" : "1965",
+    "img": "26.jpg",
+    "time": "3:33AM",
+    "day": "2",
+    "month": "3",
+    "year": "1965",
     "author": "Jeff Tao",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -43,11 +43,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "6",
-    "month" : "3",
-    "year" : "1970",
+    "img": "25.jpg",
+    "time": "3:33AM",
+    "day": "6",
+    "month": "3",
+    "year": "1970",
     "author": "Maxwell Huang-Hobbs",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -57,11 +57,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "4.jpg",
-    "time" : "3:33AM",
-    "day" : "7",
-    "month" : "3",
-    "year" : "1975",
+    "img": "24.jpg",
+    "time": "3:33AM",
+    "day": "7",
+    "month": "3",
+    "year": "1975",
     "author": "Sean Ngai",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -71,11 +71,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "1.jpg",
-    "time" : "3:33AM",
-    "day" : "2",
-    "month" : "2",
-    "year" : "1980",
+    "img": "24.jpg",
+    "time": "3:33AM",
+    "day": "2",
+    "month": "2",
+    "year": "1980",
     "author": "Ian Reucroft",
     "links": [
       { "vendor": "yelp", "url": "#" },
@@ -85,11 +85,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "2.jpg",
-    "time" : "3:33AM",
-    "day" : "1",
-    "month" : "3",
-    "year" : "1985",
+    "img": "23.jpg",
+    "time": "3:33AM",
+    "day": "1",
+    "month": "3",
+    "year": "1985",
     "author": "Jeff Tao",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -99,11 +99,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "7",
-    "month" : "3",
-    "year" : "1990",
+    "img": "21.jpg",
+    "time": "3:33AM",
+    "day": "7",
+    "month": "3",
+    "year": "1990",
     "author": "Maxwell Huang-Hobbs",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -113,11 +113,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "4.jpg",
-    "time" : "3:33AM",
-    "day" : "9",
-    "month" : "3",
-    "year" : "1995",
+    "img": "22.jpg",
+    "time": "3:33AM",
+    "day": "9",
+    "month": "3",
+    "year": "1995",
     "author": "Sean Ngai",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -127,11 +127,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "5",
-    "month" : "3",
-    "year" : "1990",
+    "img": "20.jpg",
+    "time": "3:33AM",
+    "day": "5",
+    "month": "3",
+    "year": "1990",
     "author": "Maxwell Huang-Hobbs",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -141,151 +141,11 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "img": "1.jpg",
-    "time" : "4:44AM",
-    "day" : "23",
-    "month" : "6",
-    "year" : "1955",
-    "author": "Ian Reucroft",
-    "links": [
-      { "vendor": "yelp", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "twitter", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "video": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/o4mIWoLg69Y?start=80' frameborder='0' allowfullscreen></iframe></div>",
-    "time" : "3:33AM",
-    "day" : "7",
-    "month" : "3",
-    "year" : "1960",
-    "author": "Jeff Tao",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "2.jpg",
-    "time" : "3:33AM",
-    "day" : "29",
-    "month" : "3",
-    "year" : "1965",
-    "author": "Jeff Tao",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "21",
-    "month" : "3",
-    "year" : "1970",
-    "author": "Maxwell Huang-Hobbs",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "patreon", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "4.jpg",
-    "time" : "3:33AM",
-    "day" : "12",
-    "month" : "3",
-    "year" : "1975",
-    "author": "Sean Ngai",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "twitter", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "1.jpg",
-    "time" : "3:33AM",
-    "day" : "17",
-    "month" : "3",
-    "year" : "1980",
-    "author": "Ian Reucroft",
-    "links": [
-      { "vendor": "yelp", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "twitter", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "2.jpg",
-    "time" : "3:33AM",
-    "day" : "11",
-    "month" : "3",
-    "year" : "1985",
-    "author": "Jeff Tao",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "18",
-    "month" : "3",
-    "year" : "1990",
-    "author": "Maxwell Huang-Hobbs",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "patreon", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "4.jpg",
-    "time" : "3:33AM",
-    "day" : "2",
-    "month" : "3",
-    "year" : "1995",
-    "author": "Sean Ngai",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "twitter", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "7",
-    "month" : "3",
-    "year" : "1990",
-    "author": "Maxwell Huang-Hobbs",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "patreon", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "1.jpg",
-    "time" : "4:44AM",
-    "day" : "12",
-    "month" : "6",
-    "year" : "1955",
+    "img": "19.jpg",
+    "time": "4:44AM",
+    "day": "23",
+    "month": "6",
+    "year": "1955",
     "author": "Ian Reucroft",
     "links": [
       { "vendor": "yelp", "url": "#" },
@@ -296,10 +156,222 @@
   },
   {
     "video": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/o4mIWoLg69Y?start=80' frameborder='0' allowfullscreen></iframe></div>",
-    "time" : "3:33AM",
-    "day" : "3",
-    "month" : "3",
-    "year" : "1960",
+    "video_thumb": "video-thumb-1.jpg",
+    "time": "3:33AM",
+    "day": "7",
+    "month": "3",
+    "year": "1960",
+    "author": "Jeff Tao",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "18.jpg",
+    "time": "3:33AM",
+    "day": "29",
+    "month": "3",
+    "year": "1965",
+    "author": "Jeff Tao",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "17.jpg",
+    "time": "3:33AM",
+    "day": "21",
+    "month": "3",
+    "year": "1970",
+    "author": "Maxwell Huang-Hobbs",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "patreon", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "16.jpg",
+    "time": "3:33AM",
+    "day": "12",
+    "month": "3",
+    "year": "1975",
+    "author": "Sean Ngai",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "twitter", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "15.jpg",
+    "time": "3:33AM",
+    "day": "17",
+    "month": "3",
+    "year": "1980",
+    "author": "Ian Reucroft",
+    "links": [
+      { "vendor": "yelp", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "twitter", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "14.jpg",
+    "time": "3:33AM",
+    "day": "11",
+    "month": "3",
+    "year": "1985",
+    "author": "Jeff Tao",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "13.jpg",
+    "time": "3:33AM",
+    "day": "18",
+    "month": "3",
+    "year": "1990",
+    "author": "Maxwell Huang-Hobbs",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "patreon", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "12.jpg",
+    "time": "3:33AM",
+    "day": "2",
+    "month": "3",
+    "year": "1995",
+    "author": "Sean Ngai",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "twitter", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "11.jpg",
+    "time": "3:33AM",
+    "day": "7",
+    "month": "3",
+    "year": "1990",
+    "author": "Maxwell Huang-Hobbs",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "patreon", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "10.jpg",
+    "time": "4:44AM",
+    "day": "12",
+    "month": "6",
+    "year": "1955",
+    "author": "Ian Reucroft",
+    "links": [
+      { "vendor": "yelp", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "twitter", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "video": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/o4mIWoLg69Y?start=80' frameborder='0' allowfullscreen></iframe></div>",
+    "video_thumb": "video-thumb-1.jpg",
+    "time": "3:33AM",
+    "day": "3",
+    "month": "3",
+    "year": "1960",
+    "author": "Jeff Tao",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "9.jpg",
+    "time": "3:33AM",
+    "day": "2",
+    "month": "3",
+    "year": "1965",
+    "author": "Jeff Tao",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "8.jpg",
+    "time": "3:33AM",
+    "day": "8",
+    "month": "1",
+    "year": "1970",
+    "author": "Maxwell Huang-Hobbs",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "patreon", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "7.jpg",
+    "time": "3:33AM",
+    "day": "21",
+    "month": "3",
+    "year": "1975",
+    "author": "Sean Ngai",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "twitter", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "6.jpg",
+    "time": "3:33AM",
+    "day": "19",
+    "month": "3",
+    "year": "1980",
+    "author": "Ian Reucroft",
+    "links": [
+      { "vendor": "yelp", "url": "#" },
+      { "vendor": "tumblr", "url": "#" },
+      { "vendor": "twitter", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "img": "5.jpg",
+    "time": "3:33AM",
+    "day": "14",
+    "month": "2",
+    "year": "1985",
     "author": "Jeff Tao",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -310,24 +382,10 @@
   },
   {
     "img": "2.jpg",
-    "time" : "3:33AM",
-    "day" : "2",
-    "month" : "3",
-    "year" : "1965",
-    "author": "Jeff Tao",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "8",
-    "month" : "1",
-    "year" : "1970",
+    "time": "3:33AM",
+    "day": "7",
+    "month": "3",
+    "year": "1990",
     "author": "Maxwell Huang-Hobbs",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -338,10 +396,10 @@
   },
   {
     "img": "4.jpg",
-    "time" : "3:33AM",
-    "day" : "21",
-    "month" : "3",
-    "year" : "1975",
+    "time": "3:33AM",
+    "day": "17",
+    "month": "6",
+    "year": "1995",
     "author": "Sean Ngai",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -351,11 +409,25 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
+    "img": "3.jpg",
+    "time": "3:33AM",
+    "day": "12",
+    "month": "3",
+    "year": "1990",
+    "author": "Maxwell Huang-Hobbs",
+    "links": [
+      { "vendor": "dribbble", "url": "#" },
+      { "vendor": "patreon", "url": "#" },
+      { "vendor": "website", "url": "#" }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
     "img": "1.jpg",
-    "time" : "3:33AM",
-    "day" : "19",
-    "month" : "3",
-    "year" : "1980",
+    "time": "3:33AM",
+    "day": "4",
+    "month": "3",
+    "year": "1980",
     "author": "Ian Reucroft",
     "links": [
       { "vendor": "yelp", "url": "#" },
@@ -366,10 +438,10 @@
   },
   {
     "img": "2.jpg",
-    "time" : "3:33AM",
-    "day" : "14",
-    "month" : "2",
-    "year" : "1985",
+    "time": "3:33AM",
+    "day": "5",
+    "month": "8",
+    "year": "1985",
     "author": "Jeff Tao",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -380,10 +452,10 @@
   },
   {
     "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "7",
-    "month" : "3",
-    "year" : "1990",
+    "time": "3:33AM",
+    "day": "2",
+    "month": "6",
+    "year": "1990",
     "author": "Maxwell Huang-Hobbs",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -394,10 +466,10 @@
   },
   {
     "img": "4.jpg",
-    "time" : "3:33AM",
-    "day" : "17",
-    "month" : "6",
-    "year" : "1995",
+    "time": "3:33AM",
+    "day": "6",
+    "month": "4",
+    "year": "1995",
     "author": "Sean Ngai",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -408,80 +480,10 @@
   },
   {
     "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "12",
-    "month" : "3",
-    "year" : "1990",
-    "author": "Maxwell Huang-Hobbs",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "patreon", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "1.jpg",
-    "time" : "3:33AM",
-    "day" : "4",
-    "month" : "3",
-    "year" : "1980",
-    "author": "Ian Reucroft",
-    "links": [
-      { "vendor": "yelp", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "twitter", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "2.jpg",
-    "time" : "3:33AM",
-    "day" : "5",
-    "month" : "8",
-    "year" : "1985",
-    "author": "Jeff Tao",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "tumblr", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "2",
-    "month" : "6",
-    "year" : "1990",
-    "author": "Maxwell Huang-Hobbs",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "patreon", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "4.jpg",
-    "time" : "3:33AM",
-    "day" : "6",
-    "month" : "4",
-    "year" : "1995",
-    "author": "Sean Ngai",
-    "links": [
-      { "vendor": "dribbble", "url": "#" },
-      { "vendor": "twitter", "url": "#" },
-      { "vendor": "website", "url": "#" }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "img": "3.jpg",
-    "time" : "3:33AM",
-    "day" : "7",
-    "month" : "3",
-    "year" : "1990",
+    "time": "3:33AM",
+    "day": "7",
+    "month": "3",
+    "year": "1990",
     "author": "Maxwell Huang-Hobbs",
     "links": [
       { "vendor": "dribbble", "url": "#" },

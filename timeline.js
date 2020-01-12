@@ -17,39 +17,6 @@ const months = [
   "Dec"
 ];
 
-function scrollProgress() {
-  var pageWidth =
-    innerContainer.scrollWidth - document.documentElement.clientWidth;
-
-  var scrollStatePercentage = (container.scrollTop / pageWidth) * 100;
-  document.querySelector("#tracker").style.width = scrollStatePercentage + "%";
-
-  var per = document.querySelector("#timeline").offsetWidth / (count + 1);
-  var number = Math.floor(document.querySelector("#tracker").offsetWidth / per);
-
-  //selects line to make current and turns logo certain color
-  document.querySelectorAll(".line").forEach(line => {
-    line.classList.remove("current");
-  });
-
-  if (number >= 1 && number < count) {
-    document
-      .querySelector("a[href^='#" + number + "'")
-      .classList.add("current");
-    colorSelect(number);
-  } else if (number == 0) {
-    about.classList.add("current");
-    colorSelect(0);
-  } else if (number >= count) {
-    end.classList.add("current");
-    colorSelect(0);
-  }
-}
-
-container.addEventListener("scroll", function() {
-  scrollProgress();
-});
-
 let count = 1;
 let prevDecade;
 let submittedWorks = [];
@@ -61,7 +28,10 @@ fetch("json/35-entries.json")
   .then(jsonData => {
     submittedWorks = jsonData;
     submittedWorks.sort(function(a, b) {
-      return new Date(months[a.month-1] + " " + a.day + " " + a.year) - new Date(months[b.month-1] + " " + b.day + " " + b.year);
+      return (
+        new Date(months[a.month - 1] + " " + a.day + " " + a.year) -
+        new Date(months[b.month - 1] + " " + b.day + " " + b.year)
+      );
     });
     submittedWorks.forEach(piece => {
       //create section
@@ -77,12 +47,13 @@ fetch("json/35-entries.json")
           "<img src='./assets/user/" +
           piece.img +
           "'>";
-        contentUrl = "<img src='./assets/user/" + piece.img + "'>";
+        contentUrl = "<img-2 src='./assets/user/" + piece.img + "'></img-2>";
       } else if (piece.video) {
         contentInsert =
           "<div class='workspace-container'><grid class='workspace-grid with-video'><div class='workspace-frame'>" +
           piece.video;
-        contentUrl = piece.video;
+        contentUrl =
+          "<p class='play-button'>⯈</p> <img src='./assets/user/" + piece.video_thumb + "'>";
       }
 
       //section content + append
@@ -120,7 +91,7 @@ fetch("json/35-entries.json")
 
       let decade = Math.floor((piece.year - 1900) / 10) * 10;
       if (prevDecade != decade) {
-        line.innerHTML = "<p>" + decade + "'s</p>";
+        line.innerHTML = line.innerHTML + "<p>" + decade + "'s</p>";
         prevDecade = decade;
       }
 
@@ -129,6 +100,47 @@ fetch("json/35-entries.json")
       count++;
     });
   });
+container.addEventListener("scroll", function() {
+  scrollProgress();
+});
+
+document.querySelector("#timeline").addEventListener("click", function(event) {
+  if (event.target.className == "line") {
+    event.preventDefault();
+    document
+      .getElementById(event.target.getAttribute("href").substring(1))
+      .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  }
+});
+
+function scrollProgress() {
+  var pageWidth =
+    innerContainer.scrollWidth - document.documentElement.clientWidth;
+
+  var scrollStatePercentage = (container.scrollTop / pageWidth) * 100;
+  document.querySelector("#tracker").style.width = scrollStatePercentage + "%";
+
+  var per = document.querySelector("#timeline").offsetWidth / (count + 1);
+  var number = Math.floor(document.querySelector("#tracker").offsetWidth / per);
+
+  //selects line to make current and turns logo certain color
+  document.querySelectorAll(".line").forEach(line => {
+    line.classList.remove("current");
+  });
+
+  if (number >= 1 && number < count) {
+    document
+      .querySelector("a[href^='#" + number + "'")
+      .classList.add("current");
+    colorSelect(number);
+  } else if (number == 0) {
+    about.classList.add("current");
+    colorSelect(0);
+  } else if (number >= count) {
+    end.classList.add("current");
+    colorSelect(0);
+  }
+}
 
 function colorSelect(n) {
   let cycle = Math.abs(n - 4 * Math.floor(n / 4));
