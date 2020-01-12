@@ -102,18 +102,19 @@ nav ul li button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35vh;
+  width: 38rem;
   position: relative;
+  filter: brightness(0);
 }
 
-#wrk:before {
+#wrk:after {
   content: "";
   background-image: url("./assets/general/o.svg");
   background-size: cover;
   position: absolute;
-  width: 9rem;
-  height: 9rem;
-  margin-left: -3.5rem;
+  width: 8rem;
+  height: 8rem;
+  margin-left: -3.2rem;
   animation: rotation 10s linear forwards;
   animation-iteration-count: infinite;
 }
@@ -144,8 +145,8 @@ nav ul li button:hover {
   display: flex;
 }
 #horizontal-inner-container > section {
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 #about, #end {
   font-size: 2.4rem;
@@ -154,6 +155,7 @@ nav ul li button:hover {
   min-height: 100vh;
   padding: 0 15rem !important;
   margin-top: 30vh;
+  max-width: 1200px;
 }
 #about > p {
   max-width: 56rem;
@@ -165,8 +167,9 @@ nav ul li button:hover {
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .workspace-grid {
   display: grid;
@@ -175,10 +178,25 @@ nav ul li button:hover {
   align-items: start;
   padding: 2.4rem;
 }
+.workspace-grid.with-video {
+  grid-template-columns: auto;
+  padding: 10vw;
+  max-width: 1400px;
+}
+.workspace-grid.with-video .workspace-frame,
+.workspace-grid.with-video .workspace-sidebar {
+  grid-column-start: initial;
+  grid-column-end: initial;
+}
+.workspace-grid.with-video .workspace-sidebar > p {
+  max-width: 100%;
+  width: 100%;
+}
 .workspace-frame {
   grid-column-start: 2;
   grid-column-end: 2;
   justify-self: center;
+  width: 100%;
 }
 .workspace-frame img {
   width: 50vmin;
@@ -220,12 +238,14 @@ nav ul li button:hover {
   align-items: end;
 }
 #timeline .line {
-  width: 1px;
+  min-width: 1px;
   height: 2rem;
   background-color: black;
   transition: all 0.2s ease-in-out;
-  margin: 0 2rem;
   position: relative;
+}
+#timeline .line.benchmark {
+  height: 0rem;
 }
 #timeline .line p {
   text-align: center;
@@ -235,6 +255,12 @@ nav ul li button:hover {
   position: absolute;
   font-size: 1.6rem;
   color: black;
+}
+#timeline .line:first-child() p {
+  left: 2rem;
+}
+#timeline .line:last-child() p {
+  right: 2rem;
 }
 #timeline .line:after {
   content: "";
@@ -246,7 +272,7 @@ nav ul li button:hover {
   left: -2.5rem;
   top: -1rem;
 }
-#timeline .line img {
+#timeline .line img, #timeline .line iframe {
   width: 6rem;
   bottom: 3.5rem;
   left: -3rem;
@@ -256,9 +282,10 @@ nav ul li button:hover {
   transition: all .2s ease-in-out;
   padding: .5rem;
   border: 1px solid black;
+  background-color: white;
   pointer-events: none;
 }
-#timeline .line:hover img, #timeline .line.current img {
+#timeline .line:hover img, #timeline .line.current img, #timeline .line:hover iframe, #timeline .line.current iframe {
   opacity: 1;
   bottom: 5rem;
 }
@@ -277,7 +304,6 @@ nav ul li button:hover {
   display: block;
   width: 0%;
   height: 5px;
-  margin-left: 2rem;
   background-color: black;
 }
 
