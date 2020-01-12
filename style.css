@@ -102,7 +102,7 @@ nav ul li button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38rem;
+  width: 49rem;
   position: relative;
   filter: brightness(0);
 }
@@ -112,9 +112,9 @@ nav ul li button:hover {
   background-image: url("./assets/general/o.svg");
   background-size: cover;
   position: absolute;
-  width: 8rem;
-  height: 8rem;
-  margin-left: -3.2rem;
+  width: 11rem;
+  height: 11rem;
+  margin-left: -4.2rem;
   animation: rotation 10s linear forwards;
   animation-iteration-count: infinite;
 }
@@ -253,8 +253,9 @@ nav ul li button:hover {
   left: -1.5rem;
   top: -4rem;
   position: absolute;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: black;
+  transition: font-size .2s ease-in-out;
 }
 #timeline .line:first-child() p {
   left: 2rem;
@@ -284,13 +285,14 @@ nav ul li button:hover {
   border: 1px solid black;
   background-color: white;
   pointer-events: none;
+  z-index: 20;
 }
 #timeline .line:hover img, #timeline .line.current img, #timeline .line:hover iframe, #timeline .line.current iframe {
   opacity: 1;
   bottom: 5rem;
 }
 #timeline .line:hover {
-  height: 4em;
+  height: 4rem;
   width: 1px;
 }
 #timeline .line.current {
@@ -298,6 +300,15 @@ nav ul li button:hover {
   height: 4rem;
 }
 #timeline .line.current p {
+  font-size: 1.8rem;
+}
+#timeline .line .play-button {
+  opacity: 0;
+}
+#timeline .line.current .play-button,
+#timeline .line:hover .play-button {
+  opacity: 1;
+  top: -9rem;
 }
 #tracker {
   position: absolute;
