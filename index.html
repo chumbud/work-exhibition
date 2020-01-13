@@ -14,10 +14,13 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/progressively/dist/progressively.min.css"
+    />
     <!-- import the webpage's javascript file -->
     <script src="./timeline.js" defer></script>
-    <script src="./img-2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/progressively/dist/progressively.min.js"></script>
   </head>
   <body>
     <header>
@@ -88,6 +91,9 @@
         </section>
       </div>
     </div>
+    <script>
+      progressively.init();
+    </script>
   </body>
   <footer id="timeline">
     <a href="#about" class="line current"><p></p></a>
