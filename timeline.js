@@ -44,8 +44,8 @@ fetch("json/35-entries.json")
       if (piece.img) {
         contentInsert =
           "<div class='workspace-container'><grid class='workspace-grid'><div class='workspace-frame'>" +
-          "<figure class='progressive'><img class='progressive__img progressive--not-loaded' data-progressive='" +
-          piece.img + ".jpg' src='sd" + piece.img + ".jpg'></figure>";
+          "<figure class='progressive'><img class='progressive__img progressive--not-loaded' data-progressive='./assets/user/" +
+          piece.img + ".jpg' src='./assets/user/sd" + piece.img + ".jpg'></figure>";
         contentUrl = "<img src='./assets/user/" + piece.img + ".jpg'>";
       } else if (piece.video) {
         contentInsert =
