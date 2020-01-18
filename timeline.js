@@ -1,7 +1,8 @@
 var container = document.querySelector("#horizontal-container");
 var innerContainer = document.querySelector("#horizontal-inner-container");
-var about = document.querySelector("a[href^='#about'");
-const end = document.querySelector("a[href^='#end'");
+var poppin = document.querySelector("#poppin");
+var about = document.querySelector("a[href^='#about']");
+var end = document.querySelector("a[href^='#end']");
 const months = [
   "Jan",
   "Feb",
@@ -20,8 +21,8 @@ const months = [
 let count = 1;
 let prevDecade;
 let submittedWorks = [];
-const workList = document.querySelector("#horizontal-inner-container");
-const timeline = document.querySelector("#timeline");
+var workList = document.querySelector("#horizontal-inner-container");
+var timeline = document.querySelector("#timeline");
 
 fetch("json/35-entries.json")
   .then(worksResponse => worksResponse.json())
@@ -33,8 +34,9 @@ fetch("json/35-entries.json")
         new Date(months[b.month - 1] + " " + b.day + " " + b.year)
       );
     });
+
     submittedWorks.forEach(piece => {
-      //create section
+      //create section and populate with appropriate content
       const section = document.createElement("section");
       section.setAttribute("id", count);
       section.classList.add("workspace");
@@ -43,22 +45,25 @@ fetch("json/35-entries.json")
       let contentUrl;
       if (piece.img) {
         contentInsert =
-          "<div class='workspace-container'><grid class='workspace-grid'><div class='workspace-frame'>" +
-          "<figure class='progressive'><img class='progressive__img progressive--not-loaded' data-progressive='./assets/user/" +
-          piece.img + ".jpg' src='./assets/user/sd" + piece.img + ".jpg'></figure>";
-        contentUrl = "<img src='./assets/user/" + piece.img + ".jpg'>";
+          "<div class='workspace-container'><grid class='workspace-grid'><div class='workspace-frame'><a class='read-more'>" +
+          "<img src='./assets/user/placeholder.jpg' data-src='./assets/user/" +
+          piece.img +
+          ".jpg'>";
+        contentUrl = "<img src='./assets/user/placeholder.jpg' data-src='./assets/user/" + piece.img + ".jpg'>";
       } else if (piece.video) {
         contentInsert =
           "<div class='workspace-container'><grid class='workspace-grid with-video'><div class='workspace-frame'>" +
           piece.video;
         contentUrl =
-          "<p class='play-button'>⯈</p> <img src='./assets/user/" + piece.video_thumb + "'>";
+          "<p class='play-button'>&#9654;</p> <img src='./assets/user/" +
+          piece.video_thumb +
+          "'>";
       }
 
       //section content + append
       section.innerHTML =
         contentInsert +
-        "'><h2>" +
+        "<h2>" +
         piece.time +
         " · " +
         months[piece.month - 1] +
@@ -66,34 +71,21 @@ fetch("json/35-entries.json")
         piece.day +
         "." +
         piece.year +
-        "</h2></div><div class='workspace-sidebar'><p>" +
-        piece.description +
-        "</p><h3>" +
+        "</h2><h3>" +
         piece.author +
-        "</h3><div class='links'></div></div></grid></div>";
+        "</h3></a></div></grid></div>";
       workList.insertBefore(section, document.querySelector("#end"));
 
-      let links = section.querySelector(".links");
-      piece.links.forEach(l => {
-        let link = document.createElement("a");
-        link.target = "_blank";
-        link.href = l.url;
-        link.innerHTML = l.vendor;
-
-        links.appendChild(link);
-      });
       //add line to timeline
       const line = document.createElement("a");
       line.classList.add("line");
       line.href = "#" + count;
       line.innerHTML = contentUrl;
-
       let decade = Math.floor((piece.year - 1900) / 10) * 10;
       if (prevDecade != decade) {
         line.innerHTML = line.innerHTML + "<p>" + decade + "'s</p>";
         prevDecade = decade;
       }
-
       timeline.insertBefore(line, end);
 
       count++;
@@ -103,6 +95,7 @@ container.addEventListener("scroll", function() {
   scrollProgress();
 });
 
+//scrolls into view the piece selected on the timeline
 document.querySelector("#timeline").addEventListener("click", function(event) {
   if (event.target.className == "line") {
     event.preventDefault();
@@ -112,6 +105,62 @@ document.querySelector("#timeline").addEventListener("click", function(event) {
   }
 });
 
+//gets info to put into the poppin section when an image is selected
+var imgInsert = document.querySelector("#poppin-frame");
+var timeInsert = document.querySelector("#poppin-sidebar > h2");
+var authorInsert = document.querySelector("#poppin-sidebar > h3");
+var descriptionInsert = document.querySelector("#poppin-description");
+var linkInsert = document.querySelector("#poppin-links");
+
+//searches for nearest id number from element clicked to determine which info to retrieve from organized array
+document
+  .querySelector("#horizontal-container")
+  .addEventListener("click", function(event) {
+    if (
+      event.target.parentElement.className == "read-more" ||
+      event.target.className == "read-more"
+    ) {
+      event.preventDefault();
+
+      var piece_info =
+        submittedWorks[event.target.closest(".workspace").id - 1];
+
+      imgInsert.innerHTML =
+        "<img src='./assets/user/" + piece_info.img + ".jpg'>";
+      timeInsert.innerHTML =
+        piece_info.time +
+        " · " +
+        months[piece_info.month - 1] +
+        "." +
+        piece_info.day +
+        "." +
+        piece_info.year;
+      authorInsert.innerHTML = piece_info.author;
+      descriptionInsert.innerHTML = piece_info.description;
+      piece_info.links.forEach(l => {
+        let link = document.createElement("a");
+        link.target = "_blank";
+        link.href = l.url;
+        link.innerHTML = l.vendor;
+        linkInsert.appendChild(link);
+      });
+      document.querySelectorAll("body > *:not(#poppin)").forEach(i => {
+        i.classList.add("blur");
+      });
+      poppin.classList.add("show");
+    }
+  });
+
+//closes overlay
+poppin.querySelector(".close").addEventListener("click", function(event) {
+  poppin.classList.remove("show");
+  document.querySelectorAll("body > *:not(#poppin)").forEach(i => {
+    i.classList.remove("blur");
+  });
+  linkInsert.innerHTML = "";
+});
+
+//tracks scroll progress
 function scrollProgress() {
   var pageWidth =
     innerContainer.scrollWidth - document.documentElement.clientWidth;
@@ -141,17 +190,24 @@ function scrollProgress() {
   }
 }
 
+//used to change the colors of the wrk and o svgs
 function colorSelect(n) {
   let cycle = Math.abs(n - 4 * Math.floor(n / 4));
   if (cycle == 0) {
-    document.querySelector("#wrk").style.filter = "brightness(0)";
+    document.querySelectorAll("#wrk svg").forEach(svg => {
+      svg.style.fill = "#000";
+    });
   } else if (cycle == 3) {
-    document.querySelector("#wrk").style.filter =
-      "hue-rotate(-76deg) saturate(300%)";
+    document.querySelectorAll("#wrk svg").forEach(svg => {
+      svg.style.fill = "#ec008c";
+    });
   } else if (cycle == 2) {
-    document.querySelector("#wrk").style.filter =
-      "hue-rotate(-184deg) saturate(300%)";
+    document.querySelectorAll("#wrk svg").forEach(svg => {
+      svg.style.fill = "#00aeef";
+    });
   } else if (cycle == 1) {
-    document.querySelector("#wrk").style.filter = "hue-rotate(-7deg)";
+    document.querySelectorAll("#wrk svg").forEach(svg => {
+      svg.style.fill = "#fcee22";
+    });
   }
 }
