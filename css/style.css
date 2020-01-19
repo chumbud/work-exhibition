@@ -36,75 +36,23 @@ h3 {
   font-weight: 300;
   text-align: center;
 }
-
+h4 {
+  font-size: 3.2rem;
+}
 p {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   line-height: 160%;
   margin-top: 0.8rem;
 }
 header {
-  display: flex;
-  justify-content: space-between;
   position: fixed;
-  width: 100%;
   padding: 6rem;
   z-index: -1;
-  pointer-events: none;
 }
-nav {
-}
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li button {
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  border: 0;
-  background: 0;
-  text-decoration: underline 2px;
-}
-nav ul li button:hover {
-  cursor: pointer;
-  text-decoration-style: wavy;
-}
-#logo {
-  font-family: InterUI-Black, Inter UI;
-  font-weight: 800;
-  position: relative;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 17vh;
-  width: 17vh;
-}
-
-#logo:after {
-  content: "";
-  background-image: url("./assets/general/circle.svg");
-  background-size: cover;
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  animation: rotation 10s linear forwards;
-  animation-iteration-count: infinite;
-}
-#logo:before {
-  content: "work";
-  font-size: 3.5vh;
-  transform: rotate(-10deg);
-}
-
 #wrk {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 49vmin;
   position: relative;
-  justify-content: left;
 }
 
 #wrk svg:last-child {
@@ -115,19 +63,6 @@ nav ul li button:hover {
   animation: rotation 10s linear forwards;
   animation-iteration-count: infinite;
 }
-/*
-#wrk:after {
-  content: "";
-  background-image: url("./assets/general/o.svg");
-  background-size: cover;
-  position: absolute;
-  width: 11vmin;
-  height: 11vmin;
-  left: 16.7vmin;
-  animation: rotation 10s linear forwards;
-  animation-iteration-count: infinite;
-}
-*/
 
 @keyframes rotation {
   0% {
@@ -160,16 +95,15 @@ nav ul li button:hover {
 }
 #about,
 #end {
-  font-size: 2.4rem;
   white-space: normal;
   min-width: 100vw;
-  min-height: 100vh;
   padding-left: 4.8rem;
   margin-top: 30vh;
-  max-width: 1200px;
 }
-#about > p {
-  max-width: 56rem;
+#about > p,
+#end > p {
+  width: 70%;
+  max-width: 1200px;
 }
 #end {
   padding: 15rem;
@@ -217,9 +151,6 @@ nav ul li button:hover {
 }
 .workspace-frame img {
   width: 50vmin;
-  /*
-  max-width: 50vh;
-  max-height: 75vh;*/
   padding: 1.2rem;
   border: 1px solid black;
   background-color: white;
@@ -287,7 +218,7 @@ nav ul li button:hover {
   z-index: 100;
   pointer-events: none;
   background-color: rgba(255, 255, 255, 0.8);
-  transition: opacity .2s ease-in-out, top .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
 }
@@ -298,12 +229,12 @@ nav ul li button:hover {
 }
 #poppin a.close {
   padding: 2.4rem 4.8rem;
-  font-size: 3vw;
+  font-size: 3vh;
   cursor: pointer;
   background-color: #fff;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
-  transition: background-color .2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 #poppin a.close:hover {
   background-color: #dfdfdf;
@@ -335,17 +266,19 @@ nav ul li button:hover {
   text-align: left;
 }
 #poppin-sidebar > h2 {
-  margin-top: 0;
+  margin: 0.8rem 0;
 }
 #poppin-description {
   font-size: 3.2rem;
   line-height: 160%;
-  padding-bottom: 50%
+  padding-bottom: 50%;
 }
 #poppin-links {
   margin-bottom: 4.8rem;
 }
-
+#poppin-links a {
+  margin-top: 0;
+}
 #timeline {
   position: fixed;
   bottom: 0;
@@ -450,20 +383,12 @@ nav ul li button:hover {
     min-width: 20vmin;
   }
   .workspace-frame h2 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 @media only screen and (max-width: 800px) {
   :root {
     font-size: 8px;
-  }
-  #logo {
-    width: 15vw;
-    height: 15vw;
-  }
-
-  #logo::before {
-    font-size: 3vw;
   }
   header {
     padding: 5.6rem 4.8rem 4.8rem;
@@ -524,5 +449,41 @@ nav ul li button:hover {
   #timeline .line:after {
     width: 2rem;
     left: -1rem;
+  }
+  #poppin h3 {
+    font-size: 1.6rem;
+  }
+  #poppin h2 {
+    font-size: 3.5rem;
+  }
+  #poppin-frame {
+    position: relative;
+    width: auto;
+    padding: 0;
+    left: auto;
+    height: auto;
+  }
+  #poppin-description {
+    font-size: 1.6rem;
+  }
+  #poppin-sidebar {
+    width: 100%;
+    margin-left: auto;
+    margin-top: 2.4rem;
+  }
+  #poppin-container {
+    justify-content: initial;
+    flex-direction: column;
+  }
+  #poppin a.close {
+    font-size: 4vw;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid black;
+  }
+  #poppin-links {
+    margin-bottom: 3.2rem;
   }
 }

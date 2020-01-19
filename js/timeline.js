@@ -1,3 +1,16 @@
+var lazyLoadAmdUrl =
+  "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.amd.min.js";
+var polyfillAmdUrl =
+  "https://cdn.jsdelivr.net/npm/intersection-observer-amd@2.1.0/intersection-observer-amd.js";
+
+/// Dynamically define the dependencies
+var dependencies = [
+  "IntersectionObserver" in window
+    ? null // <- Doesn't require the polyfill
+    : polyfillAmdUrl,
+  lazyLoadAmdUrl
+];
+
 var container = document.querySelector("#horizontal-container");
 var innerContainer = document.querySelector("#horizontal-inner-container");
 var poppin = document.querySelector("#poppin");
@@ -46,16 +59,19 @@ fetch("json/35-entries.json")
       if (piece.img) {
         contentInsert =
           "<div class='workspace-container'><grid class='workspace-grid'><div class='workspace-frame'><a class='read-more'>" +
-          "<img src='./assets/user/placeholder.jpg' data-src='./assets/user/" +
+          "<img class='lazy' src='./assets/user/placeholder.jpg' data-src='./assets/user/" +
           piece.img +
           ".jpg'>";
-        contentUrl = "<img src='./assets/user/placeholder.jpg' data-src='./assets/user/" + piece.img + ".jpg'>";
+        contentUrl =
+          "<img class='lazy' src='./assets/user/placeholder.jpg' data-src='./assets/user/" +
+          piece.img +
+          ".jpg'>";
       } else if (piece.video) {
         contentInsert =
           "<div class='workspace-container'><grid class='workspace-grid with-video'><div class='workspace-frame'>" +
           piece.video;
         contentUrl =
-          "<p class='play-button'>&#9654;</p> <img src='./assets/user/" +
+          "<p class='play-button'>&#9654;</p> <img class='lazy' src='./assets/user/" +
           piece.video_thumb +
           "'>";
       }
@@ -89,6 +105,10 @@ fetch("json/35-entries.json")
       timeline.insertBefore(line, end);
 
       count++;
+    });
+    // Initialize LazyLoad inside the callback
+    require(dependencies, function(_, LazyLoad) {
+      var lazyLoadInstance = new LazyLoad({        elements_selector: ".lazy"});
     });
   });
 container.addEventListener("scroll", function() {
