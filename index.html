@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>WORK</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
-    <script src="./timeline.js" defer></script>
+    <!-- Primary Meta Tags -->
+    <title>WORK — Viacom Creatives Exhibit</title>
+    <meta name="title" content="WORK — Viacom Creatives Exhibit" />
+    <meta
+      name="description"
+      content="A showcase of work from Viacom employees challenged to create around the concept of the day, date, and time of their birth. "
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="WORK — Viacom Creatives Exhibit" />
+    <meta
+      property="og:description"
+      content="A showcase of work from Viacom employees challenged to create around the concept of the day, date, and time of their birth. "
+    />
+    <meta
+      property="og:image"
+      content="./assets/general/work-animated.gif"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="WORK — Viacom Creatives Exhibit" />
+    <meta
+      property="twitter:description"
+      content="A showcase of work from Viacom employees challenged to create around the concept of the day, date, and time of their birth. "
+    />
+    <meta
+      property="twitter:image"
+      content="./assets/general/work-animated.gif"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -125,19 +157,7 @@
           </g>
         </svg>
       </div>
-      <!--<div id="logo"></div>-->
-      <!--
-      <nav>
-        <ul>
-          <li>
-            <button>work</button>
-          </li>
-          <li>
-            <button>about</button>
-          </li>
-        </ul>
-      </nav>
-    --></header>
+    </header>
     <div id="poppin">
       <a class="close">RETURN &#8617;</a>
       <div id="poppin-container">
@@ -179,10 +199,12 @@
         </section>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js"></script>
   </body>
   <footer id="timeline">
     <a href="#about" class="line current"><p></p></a>
     <a href="#end" class="line"><p></p></a>
     <div id="tracker"></div>
   </footer>
+  <script src="./js/timeline.js"></script>
 </html>
