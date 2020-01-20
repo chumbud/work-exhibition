@@ -53,12 +53,36 @@ header {
   padding: 6rem;
   z-index: -1;
 }
-#wrk, .work-logo {
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  text-align: right;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li button {
+  font-size: 3.2rem;
+  padding: 4.8rem;
+  border: 0;
+  background: 0;
+  text-decoration: underline 2px;
+}
+nav ul li button:hover {
+  cursor: pointer;
+  text-decoration-style: wavy;
+}
+#wrk,
+.work-logo {
   display: flex;
   width: 49vmin;
   position: relative;
   top: 0;
-  transition: top .2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 .work-logo {
   margin: 1.6rem;
@@ -75,7 +99,8 @@ header {
 .magenta svg {
   fill: #ec008c;
 }
-#wrk svg:last-child, .work-logo svg:last-child {
+#wrk svg:last-child,
+.work-logo svg:last-child {
   width: 11vmin;
   height: 11vmin;
   left: 16.7vmin;
@@ -135,7 +160,14 @@ header {
   margin-top: 4rem;
 }
 #end {
-  padding: 15rem;
+  justify-content: center;
+}
+.company-logos {
+  margin-top: 4rem;
+}
+.company-logos img {
+  width: 32rem;
+  margin: 0 auto;
 }
 .workspace {
   white-space: normal;
@@ -310,7 +342,7 @@ header {
   padding-bottom: 50%;
 }
 #poppin-links {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 4.8rem;
 }
 #poppin-links a {
@@ -342,13 +374,13 @@ header {
   position: absolute;
   font-size: 1.4rem;
   color: black;
+  pointer-events: none;
   transition: font-size 0.2s ease-in-out;
 }
-#timeline .line:first-child() p {
-  left: 2rem;
-}
-#timeline .line:last-child() p {
-  right: 2rem;
+#timeline .line:first-child p, #timeline a[href^='#end'].line p  {
+  font-size: 3.6rem !important;
+  bottom: 2rem;
+  pointer-events: none;
 }
 #timeline .line:after {
   content: "";
@@ -427,6 +459,9 @@ header {
     padding: 5.6rem 4.8rem 4.8rem;
     z-index: -1;
   }
+  nav {
+    display: none;
+  }
   h1 {
     font-size: 10vmin;
   }
@@ -437,15 +472,18 @@ header {
   #about > #end > * {
     max-width: 100%;
   }
-  #about,
-  #end {
-    padding: 4.8rem;
-    margin-top: 15vh;
-  }
   #about > p,
   #end > p {
     max-width: 100%;
     font-size: 1.7vh;
+  }
+  .work-logo {
+    width: 75vmin;
+  }
+  .work-logo svg:last-child {
+    width: 17vmin;
+    height: 17vmin;
+    left: 25.7vmin;
   }
   #horizontal-inner-container {
     z-index: 4;

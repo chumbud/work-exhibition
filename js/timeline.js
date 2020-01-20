@@ -234,3 +234,15 @@ function colorSelect(n) {
     });
   }
 }
+
+//this is dumb, sorry lol
+
+document.querySelector("nav ul li:first-child button").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("about").scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+});
+
+document.querySelector("nav ul li:last-child button").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("end").scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+});
