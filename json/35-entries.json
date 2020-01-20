@@ -19,7 +19,7 @@
     "time" : "6:12AM",
     "day": "5",
     "month": "3",
-    "year": "1960",
+    "year": "1999",
     "author": "Jeff Tao",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -298,10 +298,10 @@
   {
     "video": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe class='lazy' data-src='https://www.youtube.com/embed/o4mIWoLg69Y?start=80' frameborder='0' allowfullscreen></iframe></div>",
     "video_thumb": "video-thumb-1.jpg",
-    "time": "3:33AM",
-    "day": "3",
-    "month": "3",
-    "year": "1960",
+    "time": "4:33AM",
+    "day": "31",
+    "month": "5",
+    "year": "1969",
     "author": "Jeff Tao",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -453,9 +453,9 @@
   {
     "img": "3",
     "time": "3:33AM",
-    "day": "2",
-    "month": "6",
-    "year": "1990",
+    "day": "22",
+    "month": "3",
+    "year": "1956",
     "author": "Maxwell Huang-Hobbs",
     "links": [
       { "vendor": "dribbble", "url": "#" },
@@ -469,7 +469,7 @@
     "time": "3:33AM",
     "day": "6",
     "month": "4",
-    "year": "1995",
+    "year": "1951",
     "author": "Sean Ngai",
     "links": [
       { "vendor": "dribbble", "url": "#" },
