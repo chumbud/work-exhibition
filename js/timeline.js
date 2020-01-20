@@ -108,7 +108,7 @@ fetch("json/35-entries.json")
     });
     // Initialize LazyLoad inside the callback
     require(dependencies, function(_, LazyLoad) {
-      var lazyLoadInstance = new LazyLoad({        elements_selector: ".lazy"});
+      var lazyLoadInstance = new LazyLoad({ elements_selector: ".lazy" });
     });
   });
 container.addEventListener("scroll", function() {
@@ -200,12 +200,15 @@ function scrollProgress() {
     document
       .querySelector("a[href^='#" + number + "'")
       .classList.add("current");
+    document.querySelector("#wrk").classList.remove("hide");
     colorSelect(number);
   } else if (number == 0) {
+    document.querySelector("#wrk").classList.add("hide");
     about.classList.add("current");
     colorSelect(0);
   } else if (number >= count) {
     end.classList.add("current");
+    document.querySelector("#wrk").classList.remove("hide");
     colorSelect(0);
   }
 }

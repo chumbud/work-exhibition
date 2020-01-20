@@ -1,3 +1,12 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
 :root {
   font-size: 10px;
 }
@@ -10,15 +19,11 @@
   margin: 0;
   padding: 0;
 }
-html {
-}
 body {
-  font-family: helvetica, arial, sans-serif;
 }
 h1 {
-  font-size: 6vmin;
-  max-width: 56rem;
-  font-weight: 300;
+  font-size: 7vh;
+  font-weight: 400;
   margin: 0;
 }
 h1 + .arrow {
@@ -26,14 +31,13 @@ h1 + .arrow {
   margin-bottom: 4.8rem;
 }
 h2 {
-  font-size: 5vh;
-  font-weight: 300;
-  margin-top: 2.4rem;
+  font-size: 4.7vh;
+  font-weight: 400;
   text-align: center;
 }
 h3 {
   font-size: 2.4rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 h4 {
@@ -49,13 +53,29 @@ header {
   padding: 6rem;
   z-index: -1;
 }
-#wrk {
+#wrk, .work-logo {
   display: flex;
   width: 49vmin;
   position: relative;
+  top: 0;
+  transition: top .2s ease-in-out;
 }
-
-#wrk svg:last-child {
+.work-logo {
+  margin: 1.6rem;
+}
+.hide {
+  top: -20rem !important;
+}
+.yellow svg {
+  fill: #fcee22;
+}
+.cyan svg {
+  fill: #00aeef;
+}
+.magenta svg {
+  fill: #ec008c;
+}
+#wrk svg:last-child, .work-logo svg:last-child {
   width: 11vmin;
   height: 11vmin;
   left: 16.7vmin;
@@ -97,13 +117,22 @@ header {
 #end {
   white-space: normal;
   min-width: 100vw;
-  padding-left: 4.8rem;
-  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 #about > p,
 #end > p {
   width: 70%;
-  max-width: 1200px;
+  max-width: 700px;
+  text-align: center;
+}
+#about .work-logo:first-child {
+  margin-top: -4rem;
+}
+#about h4 {
+  margin-top: 4rem;
 }
 #end {
   padding: 15rem;
@@ -130,7 +159,7 @@ header {
 }
 .workspace-grid.with-video {
   grid-template-columns: auto;
-  padding: 10vw;
+  padding: 5vw;
   max-width: 1400px;
 }
 .workspace-grid.with-video .workspace-frame,
@@ -149,13 +178,6 @@ header {
   width: 100%;
   position: relative;
 }
-.workspace-frame img {
-  width: 50vmin;
-  padding: 1.2rem;
-  border: 1px solid black;
-  background-color: white;
-  transition: all 0.2s ease-in-out;
-}
 .workspace-frame a {
   color: black;
   display: block;
@@ -165,14 +187,26 @@ header {
 .workspace-frame a:hover {
   cursor: pointer;
 }
+.workspace-frame img {
+  width: 50vh;
+  padding: 1.2rem;
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.workspace-frame h2 {
+  margin-top: 1.6rem;
+}
 .workspace-frame a:hover img {
-  width: 51vmin;
+  padding: 0px;
 }
 .workspace-frame a:before {
   content: "read more \27F6";
   text-transform: uppercase;
   position: absolute;
-  background: white;
+  background: black;
+  color: white;
   border: 1px solid black;
   font-size: 2.4rem;
   text-align: center;
@@ -180,7 +214,7 @@ header {
   left: 0;
   z-index: 20;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .workspace-frame a:hover:before {
   opacity: 1;
@@ -231,34 +265,37 @@ header {
   padding: 2.4rem 4.8rem;
   font-size: 3vh;
   cursor: pointer;
-  background-color: #fff;
+  z-index: 10;
+  position: fixed;
+  color: white;
+  background-color: black;
   border-bottom: 1px solid black;
-  border-left: 1px solid black;
+  border-right: 1px solid black;
   transition: background-color 0.2s ease-in-out;
 }
 #poppin a.close:hover {
-  background-color: #dfdfdf;
+  background-color: white;
+  color: black;
 }
 #poppin-container {
   display: flex;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   flex-direction: row;
   justify-content: center;
   padding: 4.8rem;
 }
 #poppin-frame {
-  padding: 0rem 4.8rem;
-  width: 35%;
-  position: fixed;
-  height: 100%;
-  left: 0;
+  position: sticky;
+  top: 0;
+  max-width: 30%;
 }
 #poppin-frame img {
   width: 100%;
 }
 #poppin-sidebar {
-  width: 65%;
-  margin-left: 35%;
+  width: 70%;
+  margin-left: 4.8rem;
   display: flex;
   flex-direction: column;
 }
@@ -266,7 +303,6 @@ header {
   text-align: left;
 }
 #poppin-sidebar > h2 {
-  margin: 0.8rem 0;
 }
 #poppin-description {
   font-size: 3.2rem;
@@ -274,6 +310,7 @@ header {
   padding-bottom: 50%;
 }
 #poppin-links {
+  margin-top: .5rem;
   margin-bottom: 4.8rem;
 }
 #poppin-links a {
@@ -378,12 +415,8 @@ header {
   position: fixed;
 }
 @media only screen and (max-width: 1200px) {
-  .workspace-sidebar p {
-    font-size: 1.5vw;
-    min-width: 20vmin;
-  }
   .workspace-frame h2 {
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -396,6 +429,9 @@ header {
   }
   h1 {
     font-size: 10vmin;
+  }
+  .workspace-frame h3 {
+    font-size: 3.4vw;
   }
   #about > *,
   #about > #end > * {
@@ -444,17 +480,23 @@ header {
     font-size: 2.8vw;
   }
   .workspace-frame img {
-    width: 60vmin;
+    width: 70vmin;
   }
   #timeline .line:after {
     width: 2rem;
     left: -1rem;
   }
+  #poppin {
+    top: 0;
+  }
   #poppin h3 {
+    font-size: 2.4rem;
+  }
+  #poppin-links a {
     font-size: 1.6rem;
   }
   #poppin h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   #poppin-frame {
     position: relative;
@@ -462,9 +504,15 @@ header {
     padding: 0;
     left: auto;
     height: auto;
+    max-width: 100%;
+    min-height: 40%;
+  }
+  #poppin-frame img {
+    height: 100%;
+    width: auto;
   }
   #poppin-description {
-    font-size: 1.6rem;
+    font-size: 2vh;
   }
   #poppin-sidebar {
     width: 100%;
@@ -474,14 +522,16 @@ header {
   #poppin-container {
     justify-content: initial;
     flex-direction: column;
+    align-items: center;
   }
   #poppin a.close {
     font-size: 4vw;
-    bottom: 0;
-    position: fixed;
+    top: 0;
+    position: sticky;
     width: 100%;
     border: 0;
-    border-top: 1px solid black;
+    padding: 2.4rem;
+    border-bottom: 1px solid black;
   }
   #poppin-links {
     margin-bottom: 3.2rem;
